@@ -1,0 +1,122 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  
+    
+}
+html{
+    height: 100vh;
+}
+@property --angle{
+    syntax: "<angle>";
+    inherits: false;
+    initial-value: 0deg;
+}
+body,.light-mode{
+    background: linear-gradient(var(--angle),transparent 0%,hsl(253, 100%, 50%),rgb(0, 179, 255),rgb(0, 128, 47),hsl(253, 100%, 50%));
+    height: 100%;
+    animation: rotateBg 10s linear infinite;
+    background-color: black;
+    transition: 2s;
+    
+}
+.dark-mode{
+    
+    background: black;
+    color: hsl(277, 100%, 50%);
+    transition: 2s;
+}
+@keyframes rotateBg{
+    from{
+        --angle:0deg
+    }
+    to{
+        --angle:360deg
+    }
+}
+
+
+
+.store-name{
+    font-weight: 1500;
+    font-size: 4rem;
+    font-family: "Playwrite GB S", cursive;;
+   background-image: url(pngtree-color-cartoon-supermarket-background-design-backgroundmall-backgroundmarket-backgroundillustration-image_66515.jpg);
+   display: flex;
+   text-align: center;
+   justify-content: center;
+   background-clip: text;
+   color: transparent;
+   -webkit-background-clip: text;
+   
+
+}
+
+caption{
+    font-weight: 700;
+    font-size: large;
+}
+
+table, th, td{
+    border: 2px solid hsl(305 96% 48% / 1);
+    border-collapse: collapse;
+    box-shadow: 0 0 10px hsl(305 96% 48% / 1);
+    
+}
+th,td{
+    padding: 1rem;
+    
+}
+
+table{
+    margin: 2rem;
+    background-color: aquamarine;
+    
+}
+
+
+.table-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+  
+    
+    
+}
+
+.btn,.edit,.delete{
+    outline: none;
+    padding: .3rem;
+    background: linear-gradient(0deg,hsl(350, 100%, 88%),hsl(307, 100%, 88%),hsl(257, 100%, 88%));
+    border-radius: .3rem;
+    border: 2px solid linear-gradient(0deg,hsl(350, 100%, 88%),hsl(307, 100%, 88%),hsl(257, 100%, 88%));
+    box-shadow: 0 0 10px lightpink;
+    margin: 0 .4rem;
+    /* width: 2rem; */
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.labels{
+    color: hsl(61, 84%, 52%);
+    font-weight: 600;
+}
+
+.input{
+    background-color: aquamarine;
+    outline: none;
+    border-radius: .3rem;
+    margin: .5rem;
+    padding: .3rem;
+    box-shadow: 0 0 8px aquamarine;
+    
+}
+
